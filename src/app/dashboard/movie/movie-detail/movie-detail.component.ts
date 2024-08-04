@@ -142,5 +142,4 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
   private showMockedFeaturesWarning() {
     this.snackBar.open(MOCKED_FEATURES_WARNING_MESSAGE, 'OK', { duration: 10000 });
   }
-
 }

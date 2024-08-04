@@ -56,10 +56,10 @@
                                     <input matInput placeholder="budget" type="text" formControlName="budget">
                                 </mat-form-field>
                                 <mat-form-field style="width: 100%">
-                                    <mat-chip-list #chipList aria-label="Fruit selection">
+                                    <mat-chip-grid #chipList aria-label="Fruit selection">
                                         <mat-chip *ngFor="let genre of movie?.genres">{{ genre.name }}</mat-chip>
                                         <input placeholder="genres" [matChipInputFor]="chipList">
-                                    </mat-chip-list>
+                                    </mat-chip-grid>
                                 </mat-form-field>
                                 <!-- <mat-form-field style="width: 100%">
                                     <input matInput placeholder="genre_ids" type="text" formControlName="genre_ids">
