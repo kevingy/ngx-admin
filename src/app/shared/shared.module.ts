@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { NgScrollbarModule } from 'ngx-scrollbar';
 
 import { FileUploadPreviewComponent } from './components/file-upload-preview/file-upload-preview.component';
 import { DndDirective } from './components/file-upload-preview/dnd.directive';
@@ -32,12 +32,8 @@ const COMPONENTS = [
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    PerfectScrollbarModule,
+    NgScrollbarModule,
     ...COMPONENTS
-  ],
-  entryComponents: [
-    AlertDialogComponent,
-    ConfirmDialogComponent
   ]
 })
 export class SharedModule { }

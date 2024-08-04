@@ -21,7 +21,7 @@
         </div>
 
         <div class="content-card">
-            <perfect-scrollbar>
+            <ng-scrollbar>
                 <mat-table [dataSource]="dataSource" matSort class="vertical-fit">
                     <ng-container matColumnDef="documentType">
                         <mat-header-cell *matHeaderCellDef> RUC </mat-header-cell>
@@ -51,7 +51,7 @@
                     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                     <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onCustomerDetailNavigate(row)"></mat-row>
                 </mat-table>
-            </perfect-scrollbar>
+            </ng-scrollbar>
 
             <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
         </div>

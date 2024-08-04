@@ -21,7 +21,7 @@
         </div>
 
         <div class="content-card">
-            <perfect-scrollbar>
+            <ng-scrollbar>
                 <mat-table [dataSource]="dataSource" matSort class="vertical-fit">
                     <ng-container matColumnDef="title">
                         <mat-header-cell fxFlex="25" *matHeaderCellDef> Title </mat-header-cell>
@@ -51,7 +51,7 @@
                     <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
                     <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onMovieDetailNavigate(row)"></mat-row>
                 </mat-table>
-            </perfect-scrollbar>
+            </ng-scrollbar>
             
             <mat-paginator #paginator
                            showFirstLastButtons
