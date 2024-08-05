@@ -2,15 +2,15 @@
 @import '../variables/palette';
 
 $theme-palettes: (
-    primary: mat.define-palette($app-primary-palette),
-    accent: mat.define-palette($app-accent-palette, $app-accent-intention),
-    warn: mat.define-palette(mat.$red-palette),
+    primary: mat.m2-define-palette($app-primary-palette),
+    accent: mat.m2-define-palette($app-accent-palette, $app-accent-intention),
+    warn: mat.m2-define-palette(mat.$m2-red-palette),
 );
 
 @each $alias, $palette in $theme-palettes {
     .#{$alias} {
-        background-color: mat.get-color-from-palette($palette);
-        color: mat.get-color-from-palette($palette, default-contrast);
+        background-color: mat.m2-get-color-from-palette($palette);
+        color: mat.m2-get-color-from-palette($palette, default-contrast);
     }
 
     @each $nameTonality, $colorTonality in $palette {
