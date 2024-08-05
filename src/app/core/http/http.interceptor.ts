@@ -54,7 +54,7 @@ export class AppInterceptor implements HttpInterceptor {
         break;
       case 503: // Service Unavailable
         break;
-      case 503: // Internal Server Error
+      case 500: // Internal Server Error
         break;
       default: // Other Error
     }
